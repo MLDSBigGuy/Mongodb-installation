@@ -3,7 +3,10 @@
 | RDBMS| MongoDB  | 
 |------|----------|
 | Table|Collection| 
-|Column|Key       |   
+|Column|Key       |  
+|Value	|Value|
+|Records | Rows	|
+|Document | Object|
 
 	
 
