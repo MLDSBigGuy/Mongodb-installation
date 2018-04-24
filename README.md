@@ -14,8 +14,20 @@ Mongodb installation steps in mac
 ## 4. start mongo shell
   -  cd to /mongodb-folder-location/bin
   - ./mongo --host 127.0.0.1:27017
-      - shell commands: show dbs
-  
+      - shell commands: 
+        - show dbs (shows all dbs)
+        - db (shows current db)
+        - use foo (use a foo db) 
+        - help (general help)
+        - ctrl- l: clear shell screen
+        - ctrl-k: truncate the right hand text
+        - show collections (this is not a realtional db. cant get docs from diff. collections 
+        - Objectid() creates _id: if u forgot to create one! This Objectid have many properties like date-time etc.,. tHIS ID CAN MAKE U TO UNIQUELY RETRIEVE DOCS!
+ 
+ ## 5. Data storage
+    - doc must have _id field
+    - size of doc is 16MB. to store more than that, store across multiple docs n use GridFD package
+    
 
 ### 1. Open hadoop-env.sh and export your system java path, Hadoop installation path 
 ```xml
