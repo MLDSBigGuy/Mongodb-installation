@@ -10,6 +10,12 @@ Mongodb installation steps in mac
 ## 3. Start server
   - cd to /mongodb-folder-location/bin
   - ./mongod
+  
+## 4. start mongo shell
+  -  cd to /mongodb-folder-location/bin
+  - ./mongo --host 127.0.0.1:27017
+      - shell commands: show dbs
+  
 
 ### 1. Open hadoop-env.sh and export your system java path, Hadoop installation path 
 ```xml
@@ -148,3 +154,7 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
 - kill 9234
 - clear tmp cache at loc: /tmp/
 - hadoop namenode -format
+
+# Misc:
+- Help:  mongod --help | more
+
