@@ -1,5 +1,7 @@
+## TML5: Mongo has coolections. A collection is the equivalent of an RDBMS table. A collection exists within a database.
+
 # Mongodb-installation
-Mongodb installation steps in mac 
+Mongodb installation steps in mac
 
 ## 1. Install Mongodb 
   - cd mongodb-folder-location
@@ -17,16 +19,19 @@ Mongodb installation steps in mac
       - shell commands: 
         - show dbs (shows all dbs)
         - db (shows current db)
-        - use foo (use a foo db) 
-        - help (general help)
-        - ctrl- l: clear shell screen
-        - ctrl-k: truncate the right hand text
-        - show collections (this is not a realtional db. cant get docs from diff. collections 
-        - Objectid() creates _id: if u forgot to create one! This Objectid have many properties like date-time etc.,. tHIS ID CAN MAKE U TO UNIQUELY RETRIEVE DOCS!
-            - OBJECTID().GETIMESTAMP()
-        - db.dbname.insert() - unique id. If no unique id, mongo generates error! handle it in python and return jsonify
-        - db.dbname.save() - no unique id
-        - db.dbname.find().pretty()
+       
+## 5. Create Collections (foo, db...). In ur api, each new group(car, book) is one collection. Add user_ids to this collection as id. and pass enco as encoded byte array, retreive the encoded byte array later! 
+  - use foo (use a foo db) 
+  - show collections (this is not a realtional db. cant get docs from diff. collections 
+  - Objectid() creates _id: if u forgot to create one! This Objectid have many properties like date-time etc.,. tHIS ID CAN MAKE U TO UNIQUELY RETRIEVE DOCS!
+  - OBJECTID().GETIMESTAMP()
+
+## 6. Insert unique ids. Mongo automatically generates error if duplicate id is supplied
+  - db.dbname.insert() - unique id. If no unique id, mongo generates error! handle it in python and return jsonify
+      - db.dbname.save() - no unique id 
+  - db.dbname.find().pretty()
+  
+ 
           
  ## 5. Data storage
     - doc must have _id field
@@ -173,4 +178,7 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
 
 # Misc:
 - Help:  mongod --help | more
-
+# In shell:
+ - help (general help)
+  - ctrl- l: clear shell screen
+  - ctrl-k: truncate the right hand text
