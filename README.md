@@ -4,7 +4,7 @@ Mongodb installation steps in mac
 ## 1. Install Mongodb 
   - cd mongodb-folder-location
   
-## 2. Create a datadb directory inside mogo folder
+## 2. Create a datadb directory inside mongodb folder
   
 ## 3. Start server. cd to /mongodb-folder-location/bin
   - ./mongod
