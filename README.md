@@ -4,9 +4,11 @@ Mongodb installation steps in mac
 ## 1. Install Mongodb 
   - cd mongodb-folder-location
   
-## 2. Create a datadb directory inside mongodb folder
+## 2. Create a /data/db directory at root as superuser. 
+- sudo chown -R $USER /data/db
   
-## 3. Start server. cd to /mongodb-folder-location/bin
+## 3. Start server
+  - cd to /mongodb-folder-location/bin
   - ./mongod
 
 ### 1. Open hadoop-env.sh and export your system java path, Hadoop installation path 
