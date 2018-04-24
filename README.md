@@ -9,7 +9,7 @@
 |Document | Object|
 
 - doc must have _id field
-- size of doc is 16MB. to store more than that, store across multiple docs n use GridFD package
+- size of doc is 16MB. to store more than that, store across multiple docs n use GridFS package in python
 
 # Mongodb-installation
 Mongodb installation steps in mac
