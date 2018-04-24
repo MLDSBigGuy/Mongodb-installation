@@ -1,10 +1,9 @@
 ## TML5: 
 
-| RDBMS	  | MongoDB  
-|---|---|---|---|---|
-| Table  | Collection | 
-|  Column | 	Key  |   
-|  Value | value |
+| RDBMS| MongoDB  | 
+|------|----------|
+| Table|Collection| 
+|Column|Key       |   
 
 	
 
