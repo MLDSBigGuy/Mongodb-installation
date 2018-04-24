@@ -23,7 +23,11 @@ Mongodb installation steps in mac
         - ctrl-k: truncate the right hand text
         - show collections (this is not a realtional db. cant get docs from diff. collections 
         - Objectid() creates _id: if u forgot to create one! This Objectid have many properties like date-time etc.,. tHIS ID CAN MAKE U TO UNIQUELY RETRIEVE DOCS!
- 
+            - OBJECTID().GETIMESTAMP()
+        - db.dbname.insert() - unique id. If no unique id, mongo generates error! handle it in python and return jsonify
+        - db.dbname.save() - no unique id
+        - db.dbname.find().pretty()
+          
  ## 5. Data storage
     - doc must have _id field
     - size of doc is 16MB. to store more than that, store across multiple docs n use GridFD package
