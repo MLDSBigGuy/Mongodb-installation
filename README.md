@@ -1,4 +1,5 @@
-## TML5: Mongo has coolections. A collection is the equivalent of an RDBMS table. A collection exists within a database.
+## TML5: 
+- Mongo has collections. A collection is the equivalent of an RDBMS table. A collection exists within a database.
 
 # Mongodb-installation
 Mongodb installation steps in mac
