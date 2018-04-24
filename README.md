@@ -8,9 +8,6 @@
 |Records | Rows	|
 |Document | Object|
 
-	
-
-Records / Rows	Document / Object
 - doc must have _id field
 - size of doc is 16MB. to store more than that, store across multiple docs n use GridFD package
 
