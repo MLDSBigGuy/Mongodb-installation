@@ -1,5 +1,16 @@
 ## TML5: 
-- Mongo has collections. A collection is the equivalent of an RDBMS table. A collection exists within a database.
+
+| RDBMS	  | MongoDB  
+|---|---|---|---|---|
+| Table  | Collection | 
+|  Column | 	Key  |   
+|  Value | value |
+
+	
+
+Records / Rows	Document / Object
+- doc must have _id field
+- size of doc is 16MB. to store more than that, store across multiple docs n use GridFD package
 
 # Mongodb-installation
 Mongodb installation steps in mac
@@ -34,9 +45,7 @@ Mongodb installation steps in mac
   
  
           
- ## 5. Data storage
-    - doc must have _id field
-    - size of doc is 16MB. to store more than that, store across multiple docs n use GridFD package
+ 
     
 
 ### 1. Open hadoop-env.sh and export your system java path, Hadoop installation path 
