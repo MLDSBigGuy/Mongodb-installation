@@ -60,3 +60,7 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
  - help (general help)
   - ctrl- l: clear shell screen
   - ctrl-k: truncate the right hand text
+  
+# Ref:
+
+https://www.w3resource.com/mongodb/databases-documents-collections.php
