@@ -9,7 +9,7 @@
 
 
 - doc must have _id field
-- size of doc is 16MB. to store more than that, store across multiple docs n use GridFS package in python
+- size of doc is 16MB. to store more than that, store across multiple docs/use GridFS package in python
 
 # Mongodb-installation
 Mongodb installation steps in mac
@@ -31,7 +31,7 @@ Mongodb installation steps in mac
         - show dbs (shows all dbs)
         - db (shows current db)
        
-## 5. Create Collections (foo, db...). In ur api, each new group(car, book) is one collection. Add user_ids to this collection as id. and pass enco as encoded byte array, retreive the encoded byte array later! 
+## 5. Create Collections (foo, db...). In ur api, each new group(car, book) is one collection. Add user_ids to this collection as id and pass enco as encoded byte array, retreive the encoded byte array later! 
   - use foo (use a foo db) 
   - show collections (this is not a realtional db. cant get docs from diff. collections 
   - Objectid() creates _id: if u forgot to create one! This Objectid have many properties like date-time etc.,. tHIS ID CAN MAKE U TO UNIQUELY RETRIEVE DOCS!
