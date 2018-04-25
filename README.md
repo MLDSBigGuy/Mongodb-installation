@@ -41,6 +41,35 @@ Mongodb installation steps in mac
   - db.dbname.insert() - unique id. If no unique id, mongo generates error! handle it in python and return jsonify
       - db.dbname.save() - no unique id 
   - db.dbname.find().pretty()
+  
+## 7. update docs (No 2 clients can update same doc at same time! They are only updated one after other)
+ - which collection u update (car/book) ?
+ - which doc/docs u r targeting ? (isue this by mongo query)
+ - db.foo.update(query, update, options) update - what change, options - one many, upsert ? 
+ - update cmd to incremet a number!$inc:{x:10} , increments to x:11
+ - one clinet wants to add field to doc while other client what s to increment a doc! 
+    ex: $unset without chaning others - remove a filed
+        $rename to change key name 
+## 8 . Array ops
+- create array with $push Ex: db.a.update({_id:1}, {$push:{things:'one'}}) -->  ['one']
+- push can add duplicae items too. To prevent duplicates, use $addtoset .
+- $pull to remove the things out / $pop : 1 removes last element in array. $pop: -1 removes first element in array
+- If ur doc has field which is not array. then push pop dont work! 
+- MULTIPLE RECORDS update at once IN DB with $multi: true
+- Only update those docs who has a paricular element in a doc: (querying is another big concept) 
+
+
+## 9. db.foo.findandModify - (get only partiular field out of 16mb doc) 
+All docs: query, update, upsert(create one if one doesnot exists), remove,  sort, fields 
+bool: new ( returns new/old one) 
+
+## 10. Queries example
+
+
+
+ 
+
+
 
 ## Output after succesful hadoop installation looks like below:
 ```xml
@@ -64,3 +93,6 @@ Starting secondary namenodes [krishnas-mbp.widas.de]
 # Ref:
 
 https://www.w3resource.com/mongodb/databases-documents-collections.php
+
+
+
