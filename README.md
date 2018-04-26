@@ -63,7 +63,41 @@ Mongodb installation steps in mac
 All docs: query, update, upsert(create one if one doesnot exists), remove,  sort, fields 
 bool: new ( returns new/old one) 
 
-## 10. Queries example
+## 10. Indexing (for fast database search)
+ - mongo uses B-Tree,
+ - Geo index (proximity of points to center. doesnot need to be geo locations), 
+ - text(for social neterokd to index the sentences which are closest to others, 
+ - hashed(even districution of docs), 
+ - TTL (time to live index for expiring docs, designate a date time in r doc as a expiration date. mONGO WILL AUTOMATICALLY REMOVES THISDOC AFTER SOMETIME WIHOUT U DELETING IT...CAN BE USED FOR MODELS DELETION BASED ON PREVIOUSDATE !)  )
+
+- ENSUREiNDEX(gEO/TEXT/..., NAME THE INDEX/sparse index/ttl index/language.....)
+
+- db.test.ensureIndex({name:1}), 1 is ascending., -1 is desc. 
+
+- normal db search find() is a for loop that goes through each doc!
+- In index, u create a index field to jump directly to disk location! dont need to load much docs into memeory! 
+
+- query math can be on index rather than on document itself!
+
+- if index keys are in some sort condition, docs can be retreived much faster! 
+
+- indexes also used fo rrange queries like >, <, string comparision Ex: find string between t and l 
+    - $lt: 'donkey', lt is less than 
+    
+- dropIndex to remove any field except _id. 
+
+- indexing is supported on arrays. create index on encoding of user, 
+
+- If multiplle docs are matched for index qury, use sort on another filed to even minimize 
+
+- unique:true on name field (just like _id). cant insert duplicates! 
+
+- $exists: true, 
+
+- $sparse:true. sparse index store only entries for docs that have that field. 
+
+- indexing query
+    
 
 
 
