@@ -105,16 +105,6 @@ bool: new ( returns new/old one)
 
 
 
-## Output after succesful hadoop installation looks like below:
-```xml
-krishnas-mbp:sbin krishna.damarla$ ./start-dfs.sh 
-Starting namenodes on [localhost]
-Starting datanodes
-Starting secondary namenodes [krishnas-mbp.widas.de]
-2018-04-10 14:14:40,129 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-```
-(Last message is just a warning. Can be neglected) 
-
 
 
 # Misc:
