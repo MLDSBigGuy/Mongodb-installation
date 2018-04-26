@@ -64,6 +64,7 @@ All docs: query, update, upsert(create one if one doesnot exists), remove,  sort
 bool: new ( returns new/old one) 
 
 ## 10. Indexing (for fast database search)
+-  - create index with ensureIndex
  - mongo uses B-Tree,
  - Geo index (proximity of points to center. doesnot need to be geo locations), 
  - text(for social neterokd to index the sentences which are closest to others, 
@@ -101,7 +102,22 @@ bool: new ( returns new/old one)
 
 
 
+ ## 11. explain() gives the cursor or btree used explanation
  
+ ## 12. concurrent r/w
+ 
+
+ - mongo blocks if u simpy give only ensureindex without background:true. so, set bg to trie for concurrent r/w operations! This bg = true takes more long time than u build it in foreground!
+ 
+ - THIS IS USED FOR LIVE PRODUCTION 
+
+## 13. Limitation
+- index name has to be max 128 character name
+- USE INDEXES FOR FAST PERFORMANCES!!! USE INDEXES !!
+
+
+# USE INDEXES. PERIOD. 
+
 
 
 
