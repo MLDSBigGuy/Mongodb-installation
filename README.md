@@ -96,9 +96,7 @@ bool: new ( returns new/old one)
 - indexing query
     
 
-
-
- ## 11. explain() gives the cursor or btree used explanation
+ ## 11. explain() gives the explanation for indexing type (cursor/btree/...)
  
  ## 12. concurrent r/w
  
