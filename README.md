@@ -109,7 +109,6 @@ bool: new ( returns new/old one)
 
 ## 13. Limitation
 - index name has cant be more than 128 characters
--
 - doc must have _id field
 - size of doc is 16MB. To store more than that, store across multiple docs/use GridFS package in python
 
