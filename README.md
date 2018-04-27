@@ -113,7 +113,7 @@ bool: new ( returns new/old one)
 - doc must have _id field
 - size of doc is 16MB. To store more than that, store across multiple docs/use GridFS package in python
 
-# NOTE:  USE INDEXES FOR FAST PERFORMANCES!!! USE INDEXES !! USE INDEXES. PERIOD. never write y query in mongo without index
+# NOTE:  USE INDEXES FOR FAST PERFORMANCES!!! USE INDEXES !! USE INDEXES. PERIOD. never write a query in mongo without index
 
 # Misc:
 - Help:  mongod --help | more
