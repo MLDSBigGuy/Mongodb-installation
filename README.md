@@ -7,10 +7,6 @@
 |Value	|Value|
 |Records/Rows	 |Document/Object|
 
-
-- doc must have _id field
-- size of doc is 16MB. to store more than that, store across multiple docs/use GridFS package in python
-
 # Mongodb-installation
 Mongodb installation steps in mac
 
@@ -112,16 +108,12 @@ bool: new ( returns new/old one)
  - THIS IS USED FOR LIVE PRODUCTION 
 
 ## 13. Limitation
-- index name has to be max 128 character name
-- USE INDEXES FOR FAST PERFORMANCES!!! USE INDEXES !!
+- index name has cant be more than 128 characters
+-
+- doc must have _id field
+- size of doc is 16MB. To store more than that, store across multiple docs/use GridFS package in python
 
-
-# USE INDEXES. PERIOD. 
-
-
-
-
-
+# NOTE:  USE INDEXES FOR FAST PERFORMANCES!!! USE INDEXES !! USE INDEXES. PERIOD. never write y query in mongo without index
 
 # Misc:
 - Help:  mongod --help | more
